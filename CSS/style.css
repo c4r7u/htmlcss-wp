@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
 .container {
     width: 80%;
     margin: auto;
@@ -15,20 +19,79 @@
     clear: both;
 }
 
+.logo {
+    width: 160px;
+    border-right: 1px solid lightgrey;
+}
+
+img {
+    width: 140px;
+
+}
 .h1 {
     width: 100%;
     height: 100px;
-    background-color: #e579e6;
+    margin-bottom: 70px;
 }
+
+nav {
+    margin: 30px 0;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #858585; 
+}
+
 .h2 {
     width: 100%;
     height: 500px;
-    background-color: #e1d67a;
     margin-top: 20px;
 }
 
+.h2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.banner {
+    position: relative;
+    height: 500px;
+    background-color: burlywood;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.banner-text {
+    color: white;
+    position: absolute;
+    bottom: 80px;
+    left: 50px;
+    width: 50%;
+}
+
 main {
-    background-color: blue;
     margin: 20px 0;
 }
 .main-top {
@@ -41,23 +104,36 @@ main {
     margin-bottom: 20px;
 }
 
-.title {
+.introduction {
     width: 100%;
     height: 50px;
-    background-color: #abcfe7;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .main-bottom {
     margin: 20px 0;
 }
 
+.object-fit-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
 
 .col-left,
 .col-center,
 .col-right {
-    background-color: #abcfe6;
     height: 600px;
+}
+
+.col-img {
+    border-radius: 10px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
 }
 
 .col-center {
@@ -71,9 +147,19 @@ main {
     width: 23%;
 }
 
+.mini-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 footer {
     width: 100%;
     height: 70px;
-    background-color: #8801fe;
     margin-top: 20px;
+    text-align: center;
+}
+
+
+.heart {
+    color: red;
 }
