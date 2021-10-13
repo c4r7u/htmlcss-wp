@@ -13,10 +13,30 @@ body {
     margin: auto;
 }
 
+.col {
+    float: left;
+}
+
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
+}
+
+.with-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.object-fit-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .logo {
@@ -93,63 +113,41 @@ nav {
 
 main {
     margin: 20px 0;
+    padding-bottom: 10px;
 }
 .main-top {
-    height: 70px;
-    background-color: #abcfe6;
+    padding: 20px 0;
 }
-
-.col {
-    float: left;
-    margin-bottom: 20px;
+.main-top h1 {
+    font-family: arial;
+    font-size: 40px;
 }
-
-.introduction {
-    width: 100%;
-    height: 50px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+.main-top h3,
+.main-bottom p {
+    font-size: 16px;
+    color: gray;
 }
-
 .main-bottom {
     margin: 20px 0;
-}
-
-.object-fit-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-
-
-.col-left,
-.col-center,
-.col-right {
-    height: 600px;
-}
-
-.col-img {
-    border-radius: 10px;
-    height: 200px;
-    overflow: hidden;
-    position: relative;
 }
 
 .col-center {
     width: 50%;
     margin: 0 2%;
 }
-
-
 .col-left,
 .col-right {
     width: 23%;
 }
 
-.mini-title {
-    padding-top: 20px;
-    padding-bottom: 20px;
+.col-img-top {
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+.col-content h4 {
+    margin: 10px 0;
 }
 
 footer {
@@ -162,4 +160,4 @@ footer {
 
 .heart {
     color: red;
-}
+} 
